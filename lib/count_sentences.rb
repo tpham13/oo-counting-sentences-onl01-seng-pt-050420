@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.
+    self.string.strip
   end
 end
