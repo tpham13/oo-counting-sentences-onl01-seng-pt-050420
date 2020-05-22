@@ -17,7 +17,20 @@ class String
   def count_sentences
     #self.split(/[?!.]/).length 
     sentences = []
-    self.each.split do 
+    self.each.split do |word|
+      if word.include?(".")
+        sentences << word
+      elsif 
+        word.include?("?")
+        sentences << word
+      elsif 
+        word.include?("!")
+        sentences << word
+      else 
+      end 
+    end 
+  sentences.length 
+  end 
+end 
       
-  end
-end
+  
